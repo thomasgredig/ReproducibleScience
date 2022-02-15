@@ -60,3 +60,11 @@ Also, add `PackageRoxygenize: rd,collate,namespace` to the .Rproj file to execut
 
 
 
+### 3. Documentation
+
+Use the `pkgdown` package to automatically render documentation for all functions. Prerequisite is that you provide a description and example code before each function.
+
+``` r
+pkgdown::build_site(lazy=TRUE)
+```
+
